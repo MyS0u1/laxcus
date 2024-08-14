@@ -51,7 +51,7 @@ public class TestWebSocketClient extends WebSocketClient {
                 throw new RuntimeException("Failed to connect to the WebSocket server.");
             } else {
                 // amount 5.5 (second)
-                System.out.println("sleep: " + i * 100L);
+                // System.out.println("sleep: " + i * 100L);
                 Thread.sleep(i * 100L);
             }
         }

@@ -1,2 +1,6 @@
 server:
   port: 8080
+
+ws:
+  file:
+    uri: ws://localhost:8080/ws/test
