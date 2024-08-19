@@ -5,7 +5,6 @@ import my.project.boot.common.util.SleepUtil;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 
-import javax.annotation.PostConstruct;
 import java.net.URI;
 import java.nio.ByteBuffer;
 
