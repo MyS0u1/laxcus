@@ -2,5 +2,7 @@ server:
   port: 8080
 
 ws:
+  sys:
+    code: testCode
   file:
     uri: ws://localhost:8080/ws/test

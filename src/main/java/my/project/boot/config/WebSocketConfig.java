@@ -11,18 +11,17 @@ import java.net.URI;
 @Configuration
 public class WebSocketConfig {
     @Value("${ws.file.uri}")
-    private String fileUri;
+    private String url;
 
     @Bean
     public ServerEndpointExporter serverEndpointExporter (){
         // 手动注册 WebSocket 端点
         // exporter.setAnnotatedEndpointClasses(TestEndpoint.class);
-
         return new ServerEndpointExporter();
     }
 
     @Bean
     public FileClient fileClient() {
-        return new FileClient(URI.create(fileUri));
+        return new FileClient(URI.create(url));
     }
 }

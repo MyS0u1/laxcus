@@ -43,6 +43,7 @@ public class FileClient extends WebSocketClient {
     @Override
     public void onOpen(ServerHandshake serverHandshake) {
         // 去注册
+
     }
 
     @Override
